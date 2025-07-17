@@ -1,5 +1,4 @@
-"use client";
-
+"use client"; //
 import { useState, useRef } from "react";
 import { QRCodeCanvas } from "qrcode.react";
 import { FaUpload } from "react-icons/fa";
