@@ -1,0 +1,43 @@
+name: CI - QRCode Frontend Next.js
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm run test
+        continue-on-error: true
+
+      - name: Build project
+        run: npm run build
+
+      - name: Build Docker image
+        run: docker build -t qrcode-frontend .
+
+      - name: Push Docker image
+        if: github.ref == 'refs/heads/main' && success()
+        env:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+        run: |
+          echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+          docker tag qrcode-frontend $DOCKER_USERNAME/qrcode-frontend:latest
+          docker push $DOCKER_USERNAME/qrcode-frontend:latest
