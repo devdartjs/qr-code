@@ -1,4 +1,4 @@
-# Dynamic QR Code Generator — Frontend Template (Next.js)
+# 🟢 Dynamic QR Code Generator — Frontend Template (Next.js)
 
 A frontend template for generating dynamic, customizable QR codes.
 Built using modern technologies including **React/Next.js**, **CSS**, and **TypeScript**.
@@ -9,7 +9,7 @@ Designed for seamless integration with any backend API, offering flexibility and
 
 ---
 
-## 📚 Table of Contents
+## 🔵 Table of Contents
 
 - [Features](#features)
 - [Tech Stack](#tech-stack)
@@ -21,7 +21,7 @@ Designed for seamless integration with any backend API, offering flexibility and
 
 ---
 
-## 🚀 Features
+## 🟠 Features
 
 - 🎨 Dynamic QR code customization: foreground and background colors
 - 📁 Upload and embed custom logos in QR codes
@@ -32,7 +32,7 @@ Designed for seamless integration with any backend API, offering flexibility and
 
 ---
 
-## ⚙️ Tech Stack
+## 🟡 Tech Stack
 
 - [React](https://react.dev/)
 - [Next.js](https://nextjs.org/)
@@ -42,7 +42,7 @@ Designed for seamless integration with any backend API, offering flexibility and
 
 ---
 
-## 🛠️ Getting Started
+## 🟣 Getting Started
 
 ### Clone the repository
 
@@ -70,24 +70,24 @@ npm run build
 npm run start
 ```
 
-## 🔐 Environment Variables
+## 🟣 Environment Variables
 
 No environment variables are required by default.  
 If integrating with a backend API, configure the backend URL as needed.
 
-## 🧩 Customization
+## ⚪ Customization
 
 - Adjust QR code colors, logo, and size inside the main React component.
 - Modify styles via Tailwind CSS utility classes.
 - Extend functionality by editing React components or adding new pages.
 
-## 🤝 Contributing
+## ⚪ Contributing
 
 Contributions are welcome!  
 Feel free to fork the project, create branches, and open pull requests.  
 Please follow the existing code style and write clear commit messages.
 
-## 📄 License
+## ⚪ License
 
 This project is licensed under the MIT License.  
 See the [LICENSE](./LICENSE) file for details.
