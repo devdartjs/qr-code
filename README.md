@@ -78,3 +78,5 @@ If integrating with a backend API, configure the backend URL as needed.
 - Adjust QR code colors, logo, and size inside the main React component.
 - Modify styles via Tailwind CSS utility classes.
 - Extend functionality by editing React components or adding new pages.
+
+> access: "https://qr-code-murex-psi.vercel.app/"
