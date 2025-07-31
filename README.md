@@ -16,8 +16,6 @@ Designed for seamless integration with any backend API, offering flexibility and
 - [Getting Started](#getting-started)
 - [Environment Variables](#environment-variables)
 - [Customization](#customization)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -80,14 +78,3 @@ If integrating with a backend API, configure the backend URL as needed.
 - Adjust QR code colors, logo, and size inside the main React component.
 - Modify styles via Tailwind CSS utility classes.
 - Extend functionality by editing React components or adding new pages.
-
-## ⚪ Contributing
-
-Contributions are welcome!  
-Feel free to fork the project, create branches, and open pull requests.  
-Please follow the existing code style and write clear commit messages.
-
-## ⚪ License
-
-This project is licensed under the MIT License.  
-See the [LICENSE](./LICENSE) file for details.
